@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Rule</title>
+</head>
+<body>
+    <h1>Add Rule</h1>
+    <form action="/create-rule/{{ device_id }}" method="post">
+        <label for="min">Min:</label>
+        <input type="text" id="min" name="min"><br>
+
+        <label for="max">Max:</label>
+        <input type="text" id="max" name="max"><br>
+
+        <label for="speed">Speed:</label>
+        <input type="text" id="speed" name="speed"><br>
+
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text"><br>
+
+        <button type="submit">Save</button>
+    </form>
+    <a href="/static">Back</a>
+</body>
+</html>
